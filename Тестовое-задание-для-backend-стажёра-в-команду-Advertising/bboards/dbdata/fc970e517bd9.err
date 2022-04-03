@@ -1,0 +1,10 @@
+2022-04-01T15:11:01.611715Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.28) starting as process 106
+2022-04-01T15:11:02.512443Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2022-04-01T15:11:04.227440Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2022-04-01T15:11:07.349748Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2022-04-01T15:11:07.349793Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2022-04-01T15:11:07.756828Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+2022-04-01T15:11:08.536868Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: /var/run/mysqld/mysqlx.sock
+2022-04-01T15:11:08.536926Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.28'  socket: '/var/run/mysqld/mysqld.sock'  port: 0  MySQL Community Server - GPL.
+2022-04-01T15:11:44.851259Z 13 [System] [MY-013172] [Server] Received SHUTDOWN from user root. Shutting down mysqld (Version: 8.0.28).
+2022-04-01T15:12:14.318412Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.28)  MySQL Community Server - GPL.

@@ -55,8 +55,12 @@ class BboardController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Bboard $bboard)
+    public function show(Request $request, Bboard $bboard)
     {
+        if (isset($request['fields'])) {
+            $attr = explode(",", $request['fields']);
+            return $bboard->makeVisible($attr);
+        }
         return $bboard;
     }
 

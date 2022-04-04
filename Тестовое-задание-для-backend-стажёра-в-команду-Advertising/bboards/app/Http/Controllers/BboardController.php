@@ -24,7 +24,11 @@ class BboardController extends Controller
     {
         if (isset($request['orderBy'])) {
             $order = explode(",",$request['orderBy']);
-            return Bboard::orderBy($order[0], $order[1])->paginate(10);
+            if (($order[0] === "price" || $order[0] === "created_at") and ($order[1] === "desc" or $order[1] === "asc")) {
+                return Bboard::orderBy($order[0], $order[1])->paginate(10);
+            } else {
+                return response()->json(["error" => "bad request parameter orderBy"], 400);
+            }
         }
         return Bboard::paginate(10);
     }
